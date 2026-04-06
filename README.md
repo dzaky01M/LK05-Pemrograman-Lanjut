@@ -14,14 +14,6 @@ PT Asuransi BPJS adalah perusahaan asuransi kesehatan besar yang memiliki server
 2. **Generic API Response dengan Keamanan**: Terdapat kelas `SecureResponse<T>` yang membungkus data dengan mekanisme Data Masking otomatis. Menggunakan Generic Constraint untuk memastikan hanya data dengan level keamanan tertentu yang bisa diproses (`T extends MedicalRecord & Confidential`). Interface `Confidential` memiliki method `getSecurityLevel()` dengan level PUBLIC, RESTRICTED, dan SECRET.
 3. **Generic Gateway Service**: Terdapat satu kelas service `IntegrationGateway<T>` dengan method tunggal `fetchData(String patientId, int requesterClearanceLevel)`. Jika `requesterClearanceLevel` lebih rendah dari `data.getSecurityLevel()`, maka field sensitif otomatis di-masking sebelum dibungkus ke `SecureResponse`. Proses masking terjadi secara generik tanpa penggunaan `instanceof` secara eksplisit di dalam Gateway.
 
-## Level Keamanan
-
-| Level | Keterangan |
-|---|---|
-| 1 | PUBLIC - Data dapat diakses semua pihak |
-| 2 | RESTRICTED - Sebagian data disembunyikan |
-| 3 | SECRET - Seluruh data sensitif disembunyikan |
-
 ## Author
 
 Kelompok 6 / Kelas C :
