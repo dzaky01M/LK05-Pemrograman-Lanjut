@@ -24,10 +24,10 @@ PT Asuransi BPJS adalah perusahaan asuransi kesehatan besar yang memiliki server
 
 ## Author
 
-Kelompok ... / Kelas C :
+Kelompok 6 / Kelas C :
 
-1. Nama [NIM]
-2. Nama [NIM]
-3. Nama [NIM]
-4. Nama [NIM]
-5. Nama [NIM]
+1. Abraham Samuelson Siregar [255150200111030]
+2. Muhammad Dzaky Nuril Mubin [255150201111019]
+3. Ridho Alfarizi [255150207111039]
+4. Hanif Maulana [255150207111042]
+5. Hamam Yusuf Abdulloh [255150207111050]
