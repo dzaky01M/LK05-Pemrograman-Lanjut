@@ -21,7 +21,7 @@ PT Asuransi BPJS adalah perusahaan asuransi kesehatan besar yang memiliki server
 2. **Versioned** : 
    Interface ini digunakan untuk menandai bahwa suatu data memiliki versi. Dengan adanya versioning, sistem dapat melacak perubahan data dan memastikan bahwa data yang digunakan adalah versi yang sesuai.
 3. **Confidential** : 
-   Interface ini berfungsi untuk menangani keamanan data sensitif. Method maskSensitiveData() digunakan untuk menyembunyikan informasi penting agar tetap aman ketika diakses oleh pengguna dengan hak akses terbatas.
+   Interface ini berfungsi untuk menangani keamanan data sensitif. Method `maskSensitiveData()` digunakan untuk menyembunyikan informasi penting agar tetap aman ketika diakses oleh pengguna dengan hak akses terbatas.
 4. **PatientProfileV1** : 
    Class ini merupakan implementasi awal dari profil pasien yang menggabungkan data rekam medis, versioning, dan keamanan data. Class ini mampu menyimpan data pasien sekaligus melakukan masking terhadap data sensitif sesuai kebutuhan.
 5. **PatientProfileV2** : 
@@ -29,9 +29,9 @@ PT Asuransi BPJS adalah perusahaan asuransi kesehatan besar yang memiliki server
 6. **SecureResponse** : 
     Class ini digunakan sebagai pembungkus hasil proses sistem. Di dalamnya terdapat informasi status keberhasilan, data yang dikembalikan, serta pesan tambahan, sehingga output sistem menjadi lebih terstruktur dan mudah dipahami.
 7. **IntegrationGateway** : 
-    Class ini berfungsi sebagai penghubung utama dalam sistem yang menangani proses pengambilan data pasien. Dengan menggunakan generic dan multiple bound, class ini memastikan bahwa data yang diproses memiliki kemampuan untuk identifikasi, versioning, dan keamanan. Method fetchData() akan melakukan validasi ID, pengecekan level keamanan, serta masking data jika diperlukan sebelum mengembalikan hasil dalam bentuk SecureResponse.
+    Class ini berfungsi sebagai penghubung utama dalam sistem yang menangani proses pengambilan data pasien. Dengan menggunakan generic dan multiple bound, class ini memastikan bahwa data yang diproses memiliki kemampuan untuk identifikasi, versioning, dan keamanan. Method `fetchData()` akan melakukan validasi ID, pengecekan level keamanan, serta masking data jika diperlukan sebelum mengembalikan hasil dalam bentuk `SecureResponse`.
 8. **MainHospital** : 
-    Class ini merupakan entry point dari program yang digunakan untuk menjalankan simulasi sistem. Di dalamnya dilakukan pembuatan objek, pemanggilan proses melalui IntegrationGateway, serta menampilkan hasil ke pengguna.
+    Class ini merupakan entry point dari program yang digunakan untuk menjalankan simulasi sistem. Di dalamnya dilakukan pembuatan objek, pemanggilan proses melalui `IntegrationGateway`, serta menampilkan hasil ke pengguna.
     
 ## Author
 
